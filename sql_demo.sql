@@ -21,3 +21,4 @@ WHERE rowid NOT IN (
     FROM demo_table
     GROUP BY id, name
 );
+
