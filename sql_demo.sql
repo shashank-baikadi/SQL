@@ -7,12 +7,12 @@ SELECT * FROM demo_table;
 DELETE FROM demo_table;
 
 -- finds duplicates
-SELECT * FROM demo_table
-WHERE rowid NOT IN (
-    SELECT MIN(rowid)
-    FROM demo_table
-    GROUP BY id, name
-);
+-- SELECT * FROM demo_table
+-- WHERE rowid NOT IN (
+--     SELECT MIN(rowid)
+--     FROM demo_table
+--     GROUP BY id, name
+-- );
 
 -- Remove duplicates
 DELETE FROM demo_table
